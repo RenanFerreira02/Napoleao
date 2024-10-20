@@ -21,8 +21,8 @@
           <ul>
             <li><a href="#orobo">O ROBÔ</a></li>
             <li><a href="#galeria">GALERIA</a></li>
-            <li><a href="">EQUIPE</a></li>
-            <li><a href="">SEJA NOSSO SÓCIO</a></li>
+            <li><a href="#cadastro">SEJA NOSSO SÓCIO</a></li>
+            <li><a href="./login.html">LOGIN</a></li>
           </ul>
         </div>
         <button class="navbar-toggler ms-auto bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -249,7 +249,38 @@
           </button>
         </div>
       </div>
+
+      <div class="d-flex videos">
+        <iframe class="video" src="https://www.youtube.com/embed/c8f3OSQrdSo?si=92eEyG8Jbqu45dJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="video" src="https://www.youtube.com/embed/hQZEorxL6TI?si=EvgTWp2wZV1C4BlS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
     </section>
+    <section id="cadastro">
+      <h2>Seja nosso sócio!</h2>
+      <form id="formConta" action="" class="container form-cadastro">
+        <div class="col-md-12">
+          <label for="name">Seu nome</label>
+          <input type="text" id="name" name="name" placeholder="Digite seu nome" class="form-control" required min="3"/>
+        </div>
+        <div class="col-md-12 mt-2">
+          <label for="email">Seu e-mail</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" class="form-control" required />
+        </div>
+        <p id="texto_form">Um e-mail será enviado com seu acesso!</p>
+        <div class="col-md-12 mt-2 ">
+          <button id="btn_enviar" class="btn btn-primary ms-auto d-block">Enviar</button>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <img src="./images/logo.svg" alt="Logo da equipe" />
+      <div class="redes">
+        <img src="./images/logo_x.png" alt="X" />
+        <img src="./images/logo_insta.png" alt="Instagram" />
+        <img src="./images/logo_linkedin.webp" alt="Linkedin" />
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/enviaForm.js"></script>
   </body>
 </html>

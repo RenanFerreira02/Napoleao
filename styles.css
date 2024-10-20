@@ -224,6 +224,51 @@ nav {
   margin-top: 3rem;
 }
 
+.videos {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.video {
+  width: 560px;
+  height: 315px;
+}
+#cadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.form-cadastro {
+  max-width: 40% !important;
+}
+#texto_form {
+  display: none;
+}
+#chat {
+  width: 652px;
+  margin: auto;
+  display: block;
+}
+
+footer {
+  background-color: var(--main-color);
+  box-shadow: -5px -5px 40px -5px rgb(0 0 0 / 15%);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  > .redes {
+    display: flex;
+    gap: 3rem;
+    > img {
+      width: 30px;
+    }
+  }
+}
+
 @media (max-width: 1179px) {
   .header-main-info {
     > p {
