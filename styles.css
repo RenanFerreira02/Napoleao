@@ -252,6 +252,36 @@ nav {
   margin: auto;
   display: block;
 }
+#next {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+#equipe {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #fff;
+  padding: 3rem;
+  background-color: var(--main-color);
+  > div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+.cardEquipe {
+  display: flex;
+  flex-direction: column;
+  > img {
+    width: 150px;
+    height: 220px;
+    border-radius: 20px;
+  }
+}
 
 footer {
   background-color: var(--main-color);
@@ -259,6 +289,9 @@ footer {
   padding: 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
   align-items: center;
   > .redes {
     display: flex;
@@ -303,6 +336,14 @@ footer {
     object-fit: cover;
     z-index: -1;
   }
+  #next {
+    > img {
+      width: 366px;
+    }
+  }
+  .form-cadastro {
+    max-width: 80% !important;
+}
 }
 
 @media (max-width: 991px) {
@@ -325,12 +366,12 @@ footer {
   }
   .galeria {
     & .carousel-item {
-        > img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 1rem;
-        }
-    }
+      > img {
+          width: 100%;
+          border-radius: 10px;
+          margin-bottom: 1rem;
+      }
+  }
 }
   .header-main-info {
     left: 0rem;
